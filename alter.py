@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 colHeader = ['imageurl']
 colField = {'imageurl':'IMAGE URL'}
 
-page = requests.get('http://www.pondiuni.edu.in')
+page = requests.get('url') #give the url here
 print(page.status_code)
 soup = BeautifulSoup(page.content)
 tags = soup.find_all('img')
